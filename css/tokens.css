@@ -65,7 +65,6 @@
     --shell: var(--page-max);
     --page-gutter: clamp(1rem, 4vw, 2.5rem);
     --section-gap: clamp(4rem, 9vw, 7rem);
-    --nav-h: 4rem;
 
     --radius-card: 20px;
     --radius-input: 12px;
@@ -84,7 +83,6 @@
     --dur-med: 220ms;
     --dur-reveal: 600ms;
 
-    --z-nav: 100;
     --z-skip: 200;
 }
 
