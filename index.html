@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ca" data-theme="hum">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>web-daw · Portal del cicle DAW</title>
+  <meta name="description" content="Set webs estàtiques del cicle de Desenvolupament d'Aplicacions Web: activitats, calendaris, horaris i qualificacions de DAW 1 i DAW 2.">
+  <meta property="og:title" content="web-daw · Portal del cicle DAW">
+  <meta property="og:description" content="Set webs estàtiques del cicle de Desenvolupament d'Aplicacions Web: activitats, calendaris, horaris i qualificacions de DAW 1 i DAW 2.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeironpro.github.io/web-daw/">
+  <meta name="theme-color" content="#fbfaf0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23f2cf45'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23241f1c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/portal.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip-link" href="#contingut">Salta al contingut principal</a>
+
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">web·daw</a>
+
+      <nav class="nav__center" aria-label="Seccions del portal">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--menu">
+            <button class="nav__link" type="button" aria-expanded="false" data-dropdown>
+              DAW 1<span class="nav__caret" aria-hidden="true"></span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__dropitem" href="#activitats-1"><span class="nav__drop-title">Activitats</span><span class="nav__drop-desc">mòduls i tasques del primer curs</span></a>
+              <a class="nav__dropitem" href="#calendari-1"><span class="nav__drop-title">Calendari</span><span class="nav__drop-desc">planificació setmanal</span></a>
+              <a class="nav__dropitem" href="#qualificacio-1"><span class="nav__drop-title">Qualificació</span><span class="nav__drop-desc">RA i notes de cada mòdul</span></a>
+            </div>
+          </li>
+          <li class="nav__item nav__item--menu">
+            <button class="nav__link" type="button" aria-expanded="false" data-dropdown>
+              DAW 2<span class="nav__caret" aria-hidden="true"></span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__dropitem" href="#activitats-2"><span class="nav__drop-title">Activitats</span><span class="nav__drop-desc">mòduls i tasques del segon curs</span></a>
+              <a class="nav__dropitem" href="#calendari-2"><span class="nav__drop-title">Calendari</span><span class="nav__drop-desc">les setmanes del curs</span></a>
+              <a class="nav__dropitem" href="#horari-2"><span class="nav__drop-title">Horari</span><span class="nav__drop-desc">classes i mòduls per dia</span></a>
+              <a class="nav__dropitem" href="#qualificacio-2"><span class="nav__drop-title">Qualificació</span><span class="nav__drop-desc">RA i notes del segon curs</span></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav__right">
+        <a class="btn btn--outline btn--sm" href="https://github.com/jeironpro/web-daw" target="_blank" rel="noopener">GitHub</a>
+        <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu-mobil" data-burger>
+          <span class="visually-hidden">Obre el menú</span>
+          <span class="nav__burger-line" aria-hidden="true"></span>
+          <span class="nav__burger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile" id="menu-mobil" hidden>
+      <nav aria-label="Menú mòbil">
+        <p class="mono-label nav__mobile-group">DAW 1</p>
+        <a class="nav__mobile-link" href="#activitats-1">Activitats</a>
+        <a class="nav__mobile-link" href="#calendari-1">Calendari</a>
+        <a class="nav__mobile-link" href="#qualificacio-1">Qualificació</a>
+        <p class="mono-label nav__mobile-group">DAW 2</p>
+        <a class="nav__mobile-link" href="#activitats-2">Activitats</a>
+        <a class="nav__mobile-link" href="#calendari-2">Calendari</a>
+        <a class="nav__mobile-link" href="#horari-2">Horari</a>
+        <a class="nav__mobile-link" href="#qualificacio-2">Qualificació</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contingut">
+    <section class="hero shell" id="top" aria-labelledby="titol-hero">
+      <span class="hero-mark" data-parallax="0.18" aria-hidden="true"></span>
+      <p class="eyebrow" data-reveal>Portfolio · CFGS DAW</p>
+      <h1 class="hero__title" id="titol-hero" data-reveal>El cicle DAW, <em>pàgina&nbsp;a&nbsp;pàgina</em>.</h1>
+      <p class="hero__lead" data-reveal>Set webs estàtiques fetes al llarg dels dos cursos: activitats, calendaris, horaris i qualificacions. Obri'n qualsevol i navega-hi directament.</p>
+      <div class="hero__actions" data-reveal>
+        <a class="btn btn--pear" href="#daw1">Explora les webs<span class="btn__arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--outline" href="https://github.com/jeironpro/web-daw" target="_blank" rel="noopener">Veure el codi</a>
+      </div>
+      <dl class="hero__stats" data-reveal>
+        <div class="stat">
+          <dd class="stat__num" data-count="7">7</dd>
+          <dt class="mono-label">Webs desplegades</dt>
+        </div>
+        <div class="stat">
+          <dd class="stat__num" data-count="2">2</dd>
+          <dt class="mono-label">Cursos</dt>
+        </div>
+      </dl>
+    </section>
+
+    <section class="band" id="daw1" aria-labelledby="titol-daw1">
+      <header class="band__head shell" data-reveal>
+        <p class="eyebrow">Primer curs · 3 webs</p>
+        <h2 id="titol-daw1">DAW 1</h2>
+      </header>
+      <div class="shell grid">
+        <article class="card site-card" id="activitats-1" data-accent="pear" data-reveal>
+          <img class="site-card__icon" src="daw1/web-activitats-ras-daw1/icon/activitats.png" alt="" width="128" height="128" loading="lazy" data-parallax="0.06">
+          <p class="mono-label">01 · Activitats</p>
+          <h3>Activitats DAW 1</h3>
+          <p class="site-card__desc">Les activitats i els mòduls del primer curs, organitzats per unitat.</p>
+          <a class="btn btn--pear btn--sm site-card__open" href="daw1/web-activitats-ras-daw1/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Activitats DAW 1</span></a>
+        </article>
+        <article class="card site-card" id="calendari-1" data-accent="cyan" data-reveal>
+          <img class="site-card__icon" src="daw1/web-calendari-daw1/icon/calendari.png" alt="" width="128" height="128" loading="lazy" data-parallax="0.12">
+          <p class="mono-label">02 · Calendari</p>
+          <h3>Calendari DAW 1</h3>
+          <p class="site-card__desc">La planificació del primer curs, setmana a setmana.</p>
+          <a class="btn btn--pear btn--sm site-card__open" href="daw1/web-calendari-daw1/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Calendari DAW 1</span></a>
+        </article>
+        <article class="card site-card" id="qualificacio-1" data-accent="pear" data-reveal>
+          <img class="site-card__icon" src="daw1/web-qualificacio-ras-daw1/icon/icono_ras.png" alt="" width="128" height="128" loading="lazy" data-parallax="0.09">
+          <p class="mono-label">03 · Qualificació</p>
+          <h3>Qualificació DAW 1</h3>
+          <p class="site-card__desc">Els resultats d'aprenentatge i les qualificacions de cada mòdul.</p>
+          <a class="btn btn--pear btn--sm site-card__open" href="daw1/web-qualificacio-ras-daw1/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Qualificació DAW 1</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="band band--tint" id="daw2" aria-labelledby="titol-daw2">
+      <header class="band__head shell" data-reveal>
+        <p class="eyebrow">Segon curs · 4 webs</p>
+        <h2 id="titol-daw2">DAW 2</h2>
+      </header>
+      <div class="shell grid">
+        <article class="card site-card" id="activitats-2" data-accent="cyan" data-reveal>
+          <img class="site-card__icon" src="daw2/web-activitats-ras-daw2/icon/moduls.png" alt="" width="512" height="512" loading="lazy" data-parallax="0.06">
+          <p class="mono-label">04 · Activitats</p>
+          <h3>Activitats DAW 2</h3>
+          <p class="site-card__desc">Les activitats i els mòduls del segon curs.</p>
+          <a class="btn btn--pear btn--sm site-card__open" href="daw2/web-activitats-ras-daw2/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Activitats DAW 2</span></a>
+        </article>
+        <article class="card site-card" id="calendari-2" data-accent="pear" data-reveal>
+          <img class="site-card__icon" src="daw2/web-calendari-daw2/img/calendari.png" alt="" width="128" height="128" loading="lazy" data-parallax="0.12">
+          <p class="mono-label">05 · Calendari</p>
+          <h3>Calendari DAW 2</h3>
+          <p class="site-card__desc">Les setmanes del segon curs, dia a dia.</p>
+          <a class="btn btn--pear btn--sm site-card__open" href="daw2/web-calendari-daw2/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Calendari DAW 2</span></a>
+        </article>
+        <article class="card site-card" id="horari-2" data-accent="cyan" data-reveal>
+          <img class="site-card__icon" src="daw2/web-horari-daw2/icon/horari.png" alt="" width="128" height="128" loading="lazy" data-parallax="0.09">
+          <p class="mono-label">06 · Horari</p>
+          <h3>Horari DAW 2</h3>
+          <p class="site-card__desc">L'horari setmanal de classes i mòduls.</p>
+          <a class="btn btn--pear btn--sm site-card__open" href="daw2/web-horari-daw2/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Horari DAW 2</span></a>
+        </article>
+        <article class="card site-card" id="qualificacio-2" data-accent="mint" data-reveal>
+          <img class="site-card__icon" src="daw2/web-qualificacio-ras-daw2/icon/moduls.png" alt="" width="256" height="256" loading="lazy" data-parallax="0.15">
+          <p class="mono-label">07 · Qualificació</p>
+          <h3>Qualificació DAW 2</h3>
+          <p class="site-card__desc">Les qualificacions dels RA i els mòduls del segon curs.</p>
+          <a class="btn btn--pear btn--sm site-card__open" href="daw2/web-qualificacio-ras-daw2/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Qualificació DAW 2</span></a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot-marquee" aria-label="Peu de pàgina">
+    <div class="foot-marquee__track" aria-hidden="true">
+      <span>Desenvolupament d'Aplicacions Web · Portfolio personal · web·daw · 2026 ·&nbsp;</span>
+      <span>Desenvolupament d'Aplicacions Web · Portfolio personal · web·daw · 2026 ·&nbsp;</span>
+    </div>
+    <div class="foot-meta shell">
+      <p>© 2026 · Fet com a pràctica del cicle</p>
+      <nav aria-label="Enllaços del peu">
+        <a href="https://github.com/jeironpro/web-daw" target="_blank" rel="noopener">GitHub</a>
+        <a href="LICENSE">Llicència MIT</a>
+      </nav>
+    </div>
+    <p class="visually-hidden">web·daw: portal amb set webs estàtiques del cicle de Desenvolupament d'Aplicacions Web, tres de primer curs i quatre de segon. Contingut sota llicència MIT.</p>
+  </footer>
+
+  <script src="js/portal.js" defer></script>
+</body>
+</html>
