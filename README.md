@@ -1,19 +1,33 @@
-# web-daw
+# DAW
 
-## Descripción
-Este proyecto forma parte de mi portafolio personal.
-Reúne el portal índice del ciclo **CFGS Desenvolupament d'Aplicacions Web (DAW)** y las 7 webs estáticas creadas durante el ciclo, desplegadas en GitHub Pages.
+Portal que contiene las 7 webs estáticas del ciclo de **Desarrollo de Aplicaciones Web (DAW)**, organizadas por curso académico (`daw1` y `daw2`). El índice `index.html` es un catálogo vertical con tema propio (paleta OKLCH, tipografías Plus Jakarta Sans + JetBrains Mono) que agrupa las webs por curso y enlaza cada una con su botón «Obrir».
 
-El portal (`index.html`) es un catálogo vertical con tema propio (paleta OKLCH, tipografías Plus Jakarta Sans + JetBrains Mono) que agrupa las webs por curso y enlaza cada una con su botón «Obrir».
+Todas las páginas están construidas únicamente con HTML, CSS y JavaScript, sin frameworks ni dependencias externas. Están escritas en catalán.
 
-También existe un [README2.md](README2.md) en la raíz: la descripción detallada del repositorio original del ciclo, con una tabla de qué contiene cada web de `daw1` y `daw2`, su organización por curso académico y las tecnologías empleadas (HTML5, CSS3 y JavaScript sin librerías).
+## Webs del ciclo
+
+### Primer curso (`daw1`)
+
+| Carpeta | Contenido |
+| --- | --- |
+| `web-activitats-ras-daw1` | Tabla de actividades y calificaciones por módulo. |
+| `web-calendari-daw1` | Calendario del curso: semanas lectivas con fechas y días festivos señalados. |
+| `web-qualificacio-ras-daw1` | Calificaciones por resultado de aprendizaje (RA) de cada módulo, con las fórmulas de cálculo de la nota final. |
+
+### Segundo curso (`daw2`)
+
+| Carpeta | Contenido |
+| --- | --- |
+| `web-activitats-ras-daw2` | Actividades y calificaciones de los módulos de segundo curso (despliegue de aplicaciones web, desarrollo sostenible y machine learning). |
+| `web-calendari-daw2` | Calendario del curso generado dinámicamente con JavaScript. |
+| `web-horari-daw2` | Horario semanal del grupo DAW2B. |
+| `web-qualificacio-ras-daw2` | Calificaciones por resultado de aprendizaje por módulo, con una subpágina para cada módulo. |
 
 ## Estructura
 
 ```text
 web-daw/
 ├── index.html                  ← Portal índice del ciclo
-├── README2.md                  ← Descripción detallada de las webs del ciclo
 ├── css/
 │   ├── tokens.css              ← Tokens de diseño (OKLCH, tipografías, espaciado)
 │   └── portal.css              ← Estilos del portal
@@ -31,11 +45,13 @@ web-daw/
 ```
 
 ## Ver en línea
+
 <https://jeironpro.github.io/web-daw/>
 
 Cada web se sirve por ruta relativa desde la raíz del repositorio (p. ej. `daw1/web-calendari-daw1/`).
 
 ## Desarrollo
+
 No requiere dependencias ni build. Sirve la raíz con cualquier servidor estático:
 
 ```bash
@@ -44,12 +60,21 @@ python3 -m http.server 8080
 
 y abre <http://localhost:8080>.
 
+## Tecnologías
+
+- HTML5
+- CSS3
+- JavaScript (sin librerías)
+- Google Fonts
+
 ## Verificado
+
 - Responsive de 320 a 1440 px sin scroll horizontal (Chrome headless, 31/31 checks)
 - Botones «Obrir» con `target="_blank" rel="noopener"`
 - `prefers-reduced-motion` respetado: animaciones desactivadas
 - Contenido visible sin JavaScript (mejora progresiva)
 
 ## Licencia
+
 Este proyecto está bajo la licencia **MIT**.
 Consulta el archivo [LICENSE](LICENSE) para más detalles.
