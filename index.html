@@ -21,63 +21,9 @@
 <body>
     <a class="skip-link" href="#contingut">Salta al contingut principal</a>
 
-    <header class="nav" data-nav>
-        <div class="nav__inner">
-            <a class="nav__brand" href="#top">DAW</a>
-
-            <nav class="nav__center" aria-label="Seccions del portal">
-                <ul class="nav__list">
-                    <li class="nav__item nav__item--menu">
-                        <button class="nav__link" type="button" aria-expanded="false" data-dropdown>
-                            DAW 1<span class="nav__caret" aria-hidden="true"></span>
-                        </button>
-                        <div class="nav__dropdown">
-                            <a class="nav__dropitem" href="#activitats-1"><span class="nav__drop-title">Activitats</span><span class="nav__drop-desc">Mòduls i tasques del primer curs</span></a>
-                            <a class="nav__dropitem" href="#calendari-1"><span class="nav__drop-title">Calendari</span><span class="nav__drop-desc">Planificació setmanal</span></a>
-                            <a class="nav__dropitem" href="#qualificacio-1"><span class="nav__drop-title">Qualificació</span><span class="nav__drop-desc">RA i notes del primer curs</span></a>
-                        </div>
-                    </li>
-                    <li class="nav__item nav__item--menu">
-                        <button class="nav__link" type="button" aria-expanded="false" data-dropdown>
-                            DAW 2<span class="nav__caret" aria-hidden="true"></span>
-                        </button>
-                        <div class="nav__dropdown">
-                            <a class="nav__dropitem" href="#activitats-2"><span class="nav__drop-title">Activitats</span><span class="nav__drop-desc">Mòduls i tasques del segon curs</span></a>
-                            <a class="nav__dropitem" href="#calendari-2"><span class="nav__drop-title">Calendari</span><span class="nav__drop-desc">Les setmanes del curs</span></a>
-                            <a class="nav__dropitem" href="#horari-2"><span class="nav__drop-title">Horari</span><span class="nav__drop-desc">Classes i mòduls per dia</span></a>
-                            <a class="nav__dropitem" href="#qualificacio-2"><span class="nav__drop-title">Qualificació</span><span class="nav__drop-desc">RA i notes del segon curs</span></a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="nav__right">
-                <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu-mobil" data-burger>
-                    <span class="visually-hidden">Obre el menú</span>
-                    <span class="nav__burger-line" aria-hidden="true"></span>
-                    <span class="nav__burger-line" aria-hidden="true"></span>
-                </button>
-            </div>
-        </div>
-
-        <div class="nav__mobile" id="menu-mobil" hidden>
-            <nav aria-label="Menú mòbil">
-                <p class="mono-label nav__mobile-group">DAW 1</p>
-                <a class="nav__mobile-link" href="#activitats-1">Activitats</a>
-                <a class="nav__mobile-link" href="#calendari-1">Calendari</a>
-                <a class="nav__mobile-link" href="#qualificacio-1">Qualificació</a>
-                <p class="mono-label nav__mobile-group">DAW 2</p>
-                <a class="nav__mobile-link" href="#activitats-2">Activitats</a>
-                <a class="nav__mobile-link" href="#calendari-2">Calendari</a>
-                <a class="nav__mobile-link" href="#horari-2">Horari</a>
-                <a class="nav__mobile-link" href="#qualificacio-2">Qualificació</a>
-            </nav>
-        </div>
-    </header>
-
     <main id="contingut">
         <section class="hero shell" id="top" aria-labelledby="titol-hero">
-            <span class="hero-mark" data-parallax="0.18" aria-hidden="true"></span>
+            <span class="hero-mark" aria-hidden="true"></span>
             <p class="eyebrow" data-reveal>Portfolio · CFGS DAW</p>
             <h1 class="hero__title" id="titol-hero" data-reveal>El cicle DAW, <em>pàgina&nbsp;a&nbsp;pàgina</em>.</h1>
             <p class="hero__lead" data-reveal>Set webs estàtiques fetes al llarg dels dos cursos: activitats, calendaris, horaris i qualificacions. Obri'n qualsevol i navega-hi directament.</p>
@@ -104,21 +50,21 @@
             </header>
             <div class="shell grid">
                 <article class="card site-card" id="activitats-1" data-accent="pear" data-reveal>
-                    <img class="site-card__icon" src="daw1/web-activitats-ras-daw1/icon/activitats.png" alt="" width="128" height="128" loading="lazy" data-parallax="0.06">
+                    <img class="site-card__icon" src="daw1/web-activitats-ras-daw1/icon/activitats.png" alt="" width="128" height="128" loading="lazy">
                     <p class="mono-label">01 · Activitats</p>
                     <h3>Activitats DAW 1</h3>
                     <p class="site-card__desc">Les activitats i els mòduls del primer curs, organitzats per unitat.</p>
                     <a class="btn btn--pear btn--sm site-card__open" href="daw1/web-activitats-ras-daw1/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Activitats DAW 1</span></a>
                 </article>
                 <article class="card site-card" id="calendari-1" data-accent="cyan" data-reveal>
-                    <img class="site-card__icon" src="daw1/web-calendari-daw1/icon/calendari.png" alt="" width="128" height="128" loading="lazy" data-parallax="0.12">
+                    <img class="site-card__icon" src="daw1/web-calendari-daw1/icon/calendari.png" alt="" width="128" height="128" loading="lazy">
                     <p class="mono-label">02 · Calendari</p>
                     <h3>Calendari DAW 1</h3>
                     <p class="site-card__desc">La planificació del primer curs, setmana a setmana.</p>
                     <a class="btn btn--pear btn--sm site-card__open" href="daw1/web-calendari-daw1/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Calendari DAW 1</span></a>
                 </article>
                 <article class="card site-card" id="qualificacio-1" data-accent="pear" data-reveal>
-                    <img class="site-card__icon" src="daw1/web-qualificacio-ras-daw1/icon/icono_ras.png" alt="" width="128" height="128" loading="lazy" data-parallax="0.09">
+                    <img class="site-card__icon" src="daw1/web-qualificacio-ras-daw1/icon/icono_ras.png" alt="" width="128" height="128" loading="lazy">
                     <p class="mono-label">03 · Qualificació</p>
                     <h3>Qualificació DAW 1</h3>
                     <p class="site-card__desc">Els resultats d'aprenentatge i les qualificacions de cada mòdul.</p>
@@ -134,28 +80,28 @@
             </header>
             <div class="shell grid">
                 <article class="card site-card" id="activitats-2" data-accent="cyan" data-reveal>
-                    <img class="site-card__icon" src="daw2/web-activitats-ras-daw2/icon/moduls.png" alt="" width="512" height="512" loading="lazy" data-parallax="0.06">
+                    <img class="site-card__icon" src="daw2/web-activitats-ras-daw2/icon/moduls.png" alt="" width="512" height="512" loading="lazy">
                     <p class="mono-label">04 · Activitats</p>
                     <h3>Activitats DAW 2</h3>
                     <p class="site-card__desc">Les activitats i els mòduls del segon curs.</p>
                     <a class="btn btn--pear btn--sm site-card__open" href="daw2/web-activitats-ras-daw2/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Activitats DAW 2</span></a>
                 </article>
                 <article class="card site-card" id="calendari-2" data-accent="pear" data-reveal>
-                    <img class="site-card__icon" src="daw2/web-calendari-daw2/img/calendari.png" alt="" width="128" height="128" loading="lazy" data-parallax="0.12">
+                    <img class="site-card__icon" src="daw2/web-calendari-daw2/img/calendari.png" alt="" width="128" height="128" loading="lazy">
                     <p class="mono-label">05 · Calendari</p>
                     <h3>Calendari DAW 2</h3>
                     <p class="site-card__desc">Les setmanes del segon curs, dia a dia.</p>
                     <a class="btn btn--pear btn--sm site-card__open" href="daw2/web-calendari-daw2/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Calendari DAW 2</span></a>
                 </article>
                 <article class="card site-card" id="horari-2" data-accent="cyan" data-reveal>
-                    <img class="site-card__icon" src="daw2/web-horari-daw2/icon/horari.png" alt="" width="128" height="128" loading="lazy" data-parallax="0.09">
+                    <img class="site-card__icon" src="daw2/web-horari-daw2/icon/horari.png" alt="" width="128" height="128" loading="lazy">
                     <p class="mono-label">06 · Horari</p>
                     <h3>Horari DAW 2</h3>
                     <p class="site-card__desc">L'horari setmanal de classes i mòduls.</p>
                     <a class="btn btn--pear btn--sm site-card__open" href="daw2/web-horari-daw2/" target="_blank" rel="noopener">Obrir<span class="visually-hidden"> la web Horari DAW 2</span></a>
                 </article>
                 <article class="card site-card" id="qualificacio-2" data-accent="mint" data-reveal>
-                    <img class="site-card__icon" src="daw2/web-qualificacio-ras-daw2/icon/moduls.png" alt="" width="256" height="256" loading="lazy" data-parallax="0.15">
+                    <img class="site-card__icon" src="daw2/web-qualificacio-ras-daw2/icon/moduls.png" alt="" width="256" height="256" loading="lazy">
                     <p class="mono-label">07 · Qualificació</p>
                     <h3>Qualificació DAW 2</h3>
                     <p class="site-card__desc">Les qualificacions dels RA i els mòduls del segon curs.</p>
@@ -166,12 +112,8 @@
     </main>
 
     <footer class="foot-marquee" aria-label="Peu de pàgina">
-        <div class="foot-marquee__track" aria-hidden="true">
-            <span>Desenvolupament d'Aplicacions Web · Portfolio personal · web·daw · 2026 ·&nbsp;Desenvolupament d'Aplicacions Web · Portfolio personal · web·daw · 2026 ·&nbsp;Desenvolupament d'Aplicacions Web · Portfolio personal · web·daw · 2026 ·&nbsp;Desenvolupament d'Aplicacions Web · Portfolio personal · web·daw · 2026 ·&nbsp;</span>
-            <span>Desenvolupament d'Aplicacions Web · Portfolio personal · web·daw · 2026 ·&nbsp;Desenvolupament d'Aplicacions Web · Portfolio personal · web·daw · 2026 ·&nbsp;Desenvolupament d'Aplicacions Web · Portfolio personal · web·daw · 2026 ·&nbsp;Desenvolupament d'Aplicacions Web · Portfolio personal · web·daw · 2026 ·&nbsp;</span>
-        </div>
         <div class="foot-meta shell">
-            <p>© 2026 jeironpro · Fet com a pràctica del cicle</p>
+            <p>© 2026 jeironpro</p>
         </div>
         <p class="visually-hidden">web·daw: portal amb set webs estàtiques del cicle de Desenvolupament d'Aplicacions Web, tres de primer curs i quatre de segon. Contingut sota llicència MIT.</p>
     </footer>
