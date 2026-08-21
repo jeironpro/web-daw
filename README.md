@@ -1,14 +1,14 @@
 # web-daw
 
-## 📌 Descripción
+## Descripción
 Este proyecto forma parte de mi portafolio personal.
 Reúne el portal índice del ciclo **CFGS Desenvolupament d'Aplicacions Web (DAW)** y las 7 webs estáticas creadas durante el ciclo, desplegadas en GitHub Pages.
 
 El portal (`index.html`) es un catálogo vertical con tema propio (paleta OKLCH, tipografías Plus Jakarta Sans + JetBrains Mono) que agrupa las webs por curso y enlaza cada una con su botón «Obrir».
 
-> 📄 También existe un [README2.md](README2.md) en la raíz: la descripción detallada del repositorio original del ciclo, con una tabla de qué contiene cada web de `daw1` y `daw2`, su organización por curso académico y las tecnologías empleadas (HTML5, CSS3 y JavaScript sin librerías).
+También existe un [README2.md](README2.md) en la raíz: la descripción detallada del repositorio original del ciclo, con una tabla de qué contiene cada web de `daw1` y `daw2`, su organización por curso académico y las tecnologías empleadas (HTML5, CSS3 y JavaScript sin librerías).
 
-## 🗂 Estructura
+## Estructura
 
 ```text
 web-daw/
@@ -30,12 +30,12 @@ web-daw/
     └── web-qualificacio-ras-daw2/
 ```
 
-## 🌐 Ver en línea
+## Ver en línea
 <https://jeironpro.github.io/web-daw/>
 
 Cada web se sirve por ruta relativa desde la raíz del repositorio (p. ej. `daw1/web-calendari-daw1/`).
 
-## 🛠 Desarrollo
+## Desarrollo
 No requiere dependencias ni build. Sirve la raíz con cualquier servidor estático:
 
 ```bash
@@ -44,12 +44,12 @@ python3 -m http.server 8080
 
 y abre <http://localhost:8080>.
 
-## ✅ Verificado
-- Responsive de 320 a 1440 px sin scroll horizontal (Chrome headless, 28/28 checks)
+## Verificado
+- Responsive de 320 a 1440 px sin scroll horizontal (Chrome headless, 31/31 checks)
 - Botones «Obrir» con `target="_blank" rel="noopener"`
 - `prefers-reduced-motion` respetado: animaciones desactivadas
 - Contenido visible sin JavaScript (mejora progresiva)
 
-## 📜 Licencia
+## Licencia
 Este proyecto está bajo la licencia **MIT**.
 Consulta el archivo [LICENSE](LICENSE) para más detalles.
