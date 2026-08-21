@@ -1,7 +1,5 @@
 # DAW
 
-Repositorio personal que recoge las páginas web creadas durante el ciclo formativo de grado superior en **Desarrollo de Aplicaciones Web (DAW)**. El contenido está organizado por curso académico (`daw1` y `daw2`) y sirve como material de consulta y registro del progreso en cada módulo.
-
 El portal `index.html` es un catálogo vertical con tema propio (paleta OKLCH, tipografías Plus Jakarta Sans + JetBrains Mono) que agrupa las 7 webs desplegadas por curso y enlaza cada una con su botón «Obrir».
 
 Todas las páginas son estáticas y están construidas únicamente con HTML, CSS y JavaScript, sin frameworks ni dependencias externas. Están escritas en catalán.
