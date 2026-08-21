@@ -6,11 +6,14 @@ Reúne el portal índice del ciclo **CFGS Desenvolupament d'Aplicacions Web (DAW
 
 El portal (`index.html`) es un catálogo vertical con tema propio (paleta OKLCH, tipografías Plus Jakarta Sans + JetBrains Mono) que agrupa las webs por curso y enlaza cada una con su botón «Obrir».
 
+> 📄 También existe un [README2.md](README2.md) en la raíz: la descripción detallada del repositorio original del ciclo, con una tabla de qué contiene cada web de `daw1` y `daw2`, su organización por curso académico y las tecnologías empleadas (HTML5, CSS3 y JavaScript sin librerías).
+
 ## 🗂 Estructura
 
 ```text
 web-daw/
 ├── index.html                  ← Portal índice del ciclo
+├── README2.md                  ← Descripción detallada de las webs del ciclo
 ├── css/
 │   ├── tokens.css              ← Tokens de diseño (OKLCH, tipografías, espaciado)
 │   └── portal.css              ← Estilos del portal

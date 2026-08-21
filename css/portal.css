@@ -1,3 +1,10 @@
+/*
+ * Estilos del portal.
+ * Consume exclusivamente los tokens de tokens.css; aquí no hay valores de color.
+ */
+
+/* ── Reset y base ── */
+
 *,
 *::before,
 *::after {
@@ -54,12 +61,16 @@ img {
     border-radius: var(--space-3xs);
 }
 
+/* ── Utilidades ── */
+
+/* Contenedor centrado único: toda sección alinea sus bordes con él. */
 .shell {
     max-width: var(--shell);
     margin-inline: auto;
     padding-inline: var(--page-gutter);
 }
 
+/* Visible solo para lectores de pantalla. */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -72,6 +83,7 @@ img {
     white-space: nowrap;
 }
 
+/* Enlace "saltar al contenido": oculto hasta recibir foco. */
 .skip-link {
     position: fixed;
     top: calc(-1 * var(--space-xl));
@@ -90,6 +102,7 @@ img {
     top: var(--space-sm);
 }
 
+/* Etiquetas monoespaciadas en mayúsculas (numeración y eyebrows). */
 .mono-label,
 .eyebrow {
     margin: 0;
@@ -100,6 +113,10 @@ img {
     text-transform: uppercase;
     color: var(--color-ink-faint);
 }
+
+/* ── Botón push: la pulsación es la retroalimentación ──
+   Sombra = borde sólido a lo ancho completo + sombra de tierra suave.
+   Hover levanta (-2px); :active hunde (+3px) encogiendo el borde a 1px. */
 
 .btn {
     --btn-face: var(--color-accent);
@@ -147,12 +164,7 @@ img {
     outline-offset: 3px;
 }
 
-.btn--pear {
-    --btn-face: var(--color-accent);
-    --btn-edge: var(--color-accent-deep);
-    --btn-cast: var(--color-accent-cast);
-}
-
+/* Variante fantasma: trazo fino que se rellena con tint al pasar el ratón. */
 .btn--outline {
     --btn-face: transparent;
     --btn-edge: transparent;
@@ -175,6 +187,7 @@ img {
     font-size: var(--text-sm);
 }
 
+/* Flecha del CTA principal: desliza 3 px a la derecha en hover. */
 .btn__arrow {
     display: inline-block;
     transition: translate var(--dur-fast) var(--ease-out);
@@ -184,12 +197,15 @@ img {
     translate: 3px 0;
 }
 
+/* ── Hero ── */
+
 .hero {
     position: relative;
     padding-top: clamp(3rem, 9vw, 6rem);
     padding-bottom: clamp(3rem, 9vw, 6rem);
 }
 
+/* Marca-personatje: un único momento de personaje por página (late pulso). */
 .hero-mark {
     position: absolute;
     top: 26%;
@@ -217,6 +233,8 @@ img {
     font-size: var(--text-3xl);
 }
 
+/* Resaltado tipo subrayador: se pinta sobre el propio texto con
+   box-decoration-break para seguir los saltos de línea. */
 .hero__title em,
 .hl {
     font-style: normal;
@@ -250,6 +268,7 @@ img {
     gap: var(--space-xl);
 }
 
+/* column-reverse: el número grande queda encima de su etiqueta. */
 .stat {
     display: flex;
     flex-direction: column-reverse;
@@ -271,8 +290,10 @@ img {
     box-decoration-break: clone;
 }
 
+/* ── Bandas del catálogo (una por curso) ── */
+
 .band {
-    padding-block: clamp(3.5rem, 10vw, 6rem);
+    padding-block: var(--section-gap);
 }
 
 .band + .band {
@@ -294,6 +315,8 @@ img {
     grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
     gap: var(--space-md);
 }
+
+/* ── Tarjetas de web: cada una posee su acento (galería color-shift) ── */
 
 .card {
     border-radius: var(--radius-card);
@@ -321,8 +344,8 @@ img {
 }
 
 .site-card[data-accent="mint"] {
-    --tint: color-mix(in oklab, var(--color-mint) 10%, var(--color-paper));
-    --tint-hover: color-mix(in oklab, var(--color-mint) 16%, var(--color-paper));
+    --tint: var(--color-mint-tint);
+    --tint-hover: var(--color-mint-tint-hover);
 }
 
 .site-card:hover {
@@ -336,7 +359,6 @@ img {
     height: 56px;
     object-fit: contain;
     margin-bottom: var(--space-2xs);
-    will-change: transform;
 }
 
 .site-card h3 {
@@ -348,12 +370,20 @@ img {
     font-size: var(--text-sm);
 }
 
+/* Empuja el botón "Obrir" al fondo: tarjetas de igual altura visual. */
 .site-card__open {
     margin-top: auto;
 }
 
 [id] {
     scroll-margin-top: var(--space-sm);
+}
+
+/* ── Pie ── */
+
+.site-footer {
+    border-top: 2px solid var(--color-ink);
+    background: var(--color-paper-2);
 }
 
 .foot-meta {
@@ -363,10 +393,11 @@ img {
     align-items: center;
     gap: var(--space-sm);
     padding-block: var(--space-md) var(--space-lg);
-    border-top: 1px solid color-mix(in oklab, var(--color-ink) 14%, transparent);
     color: var(--color-ink-faint);
     font-size: var(--text-sm);
 }
+
+/* ── Animaciones de entrada (requieren JS; sin él todo es visible) ── */
 
 html.js [data-reveal] {
     opacity: 0;
@@ -381,6 +412,7 @@ html.js [data-reveal].is-visible {
     translate: 0 0;
 }
 
+/* ── Responsive ── */
 
 @media (max-width: 900px) {
     .hero-mark {
@@ -402,6 +434,8 @@ html.js [data-reveal].is-visible {
         background-size: 100% 0.26em;
     }
 }
+
+/* ── Movimiento reducido ── */
 
 @media (prefers-reduced-motion: reduce) {
     html {
