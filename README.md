@@ -1,8 +1,8 @@
 # DAW
 
-El portal `index.html` es un catálogo vertical con tema propio (paleta OKLCH, tipografías Plus Jakarta Sans + JetBrains Mono) que agrupa las 7 webs desplegadas por curso y enlaza cada una con su botón «Obrir».
+Portal que contiene las 7 webs estáticas del ciclo de **Desarrollo de Aplicaciones Web (DAW)**, organizadas por curso académico (`daw1` y `daw2`) y desplegadas en GitHub Pages. El índice `index.html` es un catálogo vertical con tema propio (paleta OKLCH, tipografías Plus Jakarta Sans + JetBrains Mono) que agrupa las webs por curso y enlaza cada una con su botón «Obrir».
 
-Todas las páginas son estáticas y están construidas únicamente con HTML, CSS y JavaScript, sin frameworks ni dependencias externas. Están escritas en catalán.
+Todas las páginas están construidas únicamente con HTML, CSS y JavaScript, sin frameworks ni dependencias externas. Están escritas en catalán.
 
 ## Webs del ciclo
 
